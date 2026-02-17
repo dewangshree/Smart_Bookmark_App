@@ -1,4 +1,4 @@
-## 1️⃣ Smart Bookmark App
+# 1️⃣ Smart Bookmark App
 
 # 2️⃣ Live Deployment
 
