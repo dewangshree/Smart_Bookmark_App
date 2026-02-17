@@ -1,18 +1,13 @@
 # Smart Bookmark App
-```
 
-Production-ready full-stack bookmark management system with secure OAuth authentication, database-level authorization (RLS), and real-time synchronization.
-```
-
----
 
 # 2️⃣ Live Demo (Immediately After Title)
 
-```
+
 ## Live Deployment
 
 https://smart-bookmark-k4p3xf6ts-shreyas-projects-ff372eaf.vercel.app
-```
+
 
 ---
 
@@ -29,10 +24,7 @@ UI updates without page refresh.
 ---
 
 # 4️⃣  END-TO-END SYSTEM FLOW DIAGRAM  
-````markdown
-## End-to-End System Flow
-
-```text
+```
 ┌──────────────────────────────────────────────────────────────┐
 │                          USER                                │
 │                Interacts via Web Browser                     │
@@ -315,27 +307,7 @@ Environment configuration management
 Clean system documentation
 ```
 
----
 
-# Final Statement
-
-This project was built with security, scalability, and production-readiness as core principles.
-Access control is enforced at the database layer, real-time updates are event-driven, and deployment follows modern serverless best practices.
-
----
-
-This version:
-
-✔ Has architecture diagram
-✔ Has authentication flow
-✔ Has realtime flow
-✔ Has database diagram
-✔ Has SQL blocks
-✔ Has no broken borders
-✔ Works in any markdown viewer
-✔ Looks clean and professional
-
-If you want next level, I can now:
 
 * Make it more concise (FAANG internal doc style)
 * Or make it more impressive (add scalability + performance section)
