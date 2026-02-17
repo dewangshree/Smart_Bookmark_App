@@ -63,7 +63,7 @@ UI updates without page refresh.
 │  • Instant Re-render                                         │
 └──────────────────────────────────────────────────────────────┘
 ```
-````
+---
 
 # 5. Database Relationship Model
 
@@ -302,10 +302,3 @@ Production deployment workflow
 Environment configuration management
 Clean system documentation
 ```
-
-
-
-* Make it more concise (FAANG internal doc style)
-* Or make it more impressive (add scalability + performance section)
-
-Your call.
