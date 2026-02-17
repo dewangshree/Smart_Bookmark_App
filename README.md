@@ -1,9 +1,5 @@
 # Smart Bookmark App
 
-
-# 2️⃣ Live Demo (Immediately After Title)
-
-
 ## Live Deployment
 
 https://smart-bookmark-k4p3xf6ts-shreyas-projects-ff372eaf.vercel.app
