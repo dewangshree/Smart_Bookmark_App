@@ -1,143 +1,81 @@
-Perfect.
-Now I understand clearly.
-
-You want:
-
-* ✅ Proper architecture flow diagrams
-* ✅ Everything inside code blocks
-* ✅ No Mermaid
-* ✅ No broken vague borders
-* ✅ Clean alignment
-* ✅ Full professional README
-* ✅ Ready to copy-paste
-
-Good.
-
-Below is your **complete professional README** with **clean flowchart-style diagrams using structured indentation**, not fragile box art.
-
-This will render perfectly everywhere.
-
----
-
 # Smart Bookmark App
+```
 
-Production-grade full-stack bookmark management system with secure OAuth authentication, strict database-level authorization, and real-time synchronization.
-
-Deployed using a modern serverless architecture.
+Production-ready full-stack bookmark management system with secure OAuth authentication, database-level authorization (RLS), and real-time synchronization.
+```
 
 ---
 
-# Live Deployment
-
-Production URL:
+# 2️⃣ Live Demo (Immediately After Title)
 
 ```
+## Live Deployment
+
 https://smart-bookmark-k4p3xf6ts-shreyas-projects-ff372eaf.vercel.app
 ```
 
 ---
 
-# 1. Overview
-
-Smart Bookmark App enables authenticated users to:
-
-* Sign in securely using Google OAuth 2.0
-* Add bookmarks (Title + URL)
-* Automatically fetch website favicon
-* Delete bookmarks instantly
-* Receive real-time updates without refresh
-* Access only their own data (database-enforced isolation)
-
-The system is designed with security, clarity, and production-readiness in mind.
-
----
-
-# 2. Tech Stack
-
-Frontend
+# 3️⃣ 🔷 System Overview 
 
 ```
-Next.js (App Router)
-React
-Tailwind CSS
-Supabase JS SDK
-```
+## Overview
 
-Backend / Infrastructure
-
-```
-Supabase
-PostgreSQL
-Supabase Realtime Engine
-Google OAuth 2.0
-Row-Level Security (RLS)
-```
-
-Deployment
-
-```
-Vercel (Production)
-Environment Variables Configuration
-```
-
-Development
-
-```
-Visual Studio Code
+Smart Bookmark App allows users to securely authenticate using Google OAuth, 
+store bookmarks with strict per-user isolation, and experience real-time 
+UI updates without page refresh.
 ```
 
 ---
 
-# 3. High-Level Architecture Diagram
+# 4️⃣  END-TO-END SYSTEM FLOW DIAGRAM  
+````markdown
+## End-to-End System Flow
 
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                          USER                                │
+│                Interacts via Web Browser                     │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                       CLIENT LAYER                           │
+│  • Next.js Application                                       │
+│  • React UI (Tailwind CSS)                                   │
+│  • Supabase JS SDK                                           │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              │ HTTPS Request + JWT
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                    SUPABASE AUTH SERVICE                     │
+│  • Google OAuth Verification                                 │
+│  • JWT Session Issuance                                      │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                    SUPABASE DATABASE LAYER                   │
+│  • PostgreSQL                                                │
+│  • Row-Level Security (RLS Validation)                       │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              │ Database Change Event
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                    SUPABASE REALTIME ENGINE                  │
+│  • Emits WebSocket Events                                    │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                       CLIENT UI UPDATE                       │
+│  • React State Updates                                       │
+│  • Instant Re-render                                         │
+└──────────────────────────────────────────────────────────────┘
 ```
-User (Browser)
-    │
-    ▼
-Client Layer
-    ├── Next.js Application (App Router)
-    ├── React UI (Tailwind CSS)
-    └── Supabase JS SDK
-            │
-            │ HTTPS Request (JWT Attached)
-            ▼
-Supabase Platform
-    ├── Authentication Service
-    │       ├── Google OAuth 2.0
-    │       └── JWT Session Issuance
-    │
-    ├── PostgreSQL Database
-    │       ├── bookmarks table
-    │       └── Row-Level Security (RLS)
-    │
-    └── Realtime Engine
-            └── WebSocket Subscriptions
-            │
-            ▼
-Deployment Layer
-    └── Vercel (Production Environment)
-```
-
-All requests from the client include a JWT token.
-Database access is validated using Row-Level Security policies.
-
----
-
-# 4. Database Architecture
-
-## Table: bookmarks
-
-```sql
-create table bookmarks (
-  id uuid primary key default gen_random_uuid(),
-  user_id uuid references auth.users(id) on delete cascade,
-  title text not null,
-  url text not null,
-  created_at timestamp with time zone default now()
-);
-```
-
----
+````
 
 # 5. Database Relationship Model
 
