@@ -10,7 +10,6 @@ https://smart-bookmark-k4p3xf6ts-shreyas-projects-ff372eaf.vercel.app
 ## 3️⃣ 🔷 System Overview 
 
 ```
-## Overview
 
 Smart Bookmark App allows users to securely authenticate using Google OAuth, 
 store bookmarks with strict per-user isolation, and experience real-time 
