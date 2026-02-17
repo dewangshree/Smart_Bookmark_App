@@ -1,6 +1,6 @@
-# Smart Bookmark App
+# 1️⃣ Smart Bookmark App
 
-## Live Deployment
+## 2️⃣ Live Deployment
 
 https://smart-bookmark-k4p3xf6ts-shreyas-projects-ff372eaf.vercel.app
 
@@ -65,7 +65,7 @@ UI updates without page refresh.
 ```
 ---
 
-# 5. Database Relationship Model
+# 5️⃣ Database Relationship Model
 
 ```
 auth.users (1)
@@ -92,7 +92,7 @@ Each bookmark belongs to exactly one user.
 
 ---
 
-# 6. Security Model (Row-Level Security)
+# 6️⃣ Security Model (Row-Level Security)
 
 Enable RLS:
 
@@ -123,7 +123,7 @@ This prevents horizontal privilege escalation.
 
 ---
 
-# 7. Authentication Flow Diagram
+# 7️⃣ Authentication Flow Diagram
 
 ```
 User clicks "Sign in with Google"
@@ -154,7 +154,7 @@ No passwords are stored in the application.
 
 ---
 
-# 8. Real-Time Data Flow Diagram
+# 8️⃣ Real-Time Data Flow Diagram
 
 ```
 User adds bookmark
@@ -182,7 +182,7 @@ This eliminates polling and ensures reactive behavior.
 
 ---
 
-# 9. Favicon Detection Strategy
+# 9️⃣ Favicon Detection Strategy
 
 ```javascript
 const getFavicon = (url) => {
@@ -202,7 +202,7 @@ Zero maintenance overhead
 
 ---
 
-# 10. Key Engineering Decisions
+# 🔟 Key Engineering Decisions
 
 ```
 Database-enforced authorization instead of frontend filtering
@@ -214,7 +214,7 @@ Environment-based configuration
 
 ---
 
-# 11. Challenges & Solutions
+# 1️⃣1️⃣ Challenges & Solutions
 
 OAuth Redirect Misconfiguration
 
@@ -246,7 +246,7 @@ Solution: Implemented Supabase Realtime subscription
 
 ---
 
-# 12. Time Investment (~15 Hours)
+# 1️⃣2️⃣ Time Investment (~15 Hours)
 
 ```
 Architecture Planning        – 2 hours
@@ -262,7 +262,7 @@ Total                        – ~15 hours
 
 ---
 
-# 13. Local Setup
+# 1️⃣3️⃣ Local Setup
 
 ```bash
 git clone https://github.com/your-username/Smart_Bookmark_App.git
@@ -280,7 +280,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 
 ---
 
-# 14. Production Deployment
+# 1️⃣4️⃣ Production Deployment
 
 ```
 Platform: Vercel
@@ -292,7 +292,7 @@ Real-Time: WebSocket Subscriptions
 
 ---
 
-# 15. What This Project Demonstrates
+# 1️⃣5️⃣ What This Project Demonstrates
 
 ```
 Secure full-stack architecture
